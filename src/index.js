@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import './style.css';
 
@@ -16,5 +18,4 @@ for (let i = 0; i < activities.length; i++) {
 </li>`;
 
   ul.appendChild(li);
-
 }
