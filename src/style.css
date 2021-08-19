@@ -1,3 +1,18 @@
-body {
-  background-color: bisque;
+.color-text-black,
+.color-text-black:hover {
+  color: #000;
 }
+
+.onfocus-border-none:focus {
+  outline: none;
+}
+
+.background-color-light-gray {
+  background-color: #f5f5f5;
+}
+
+::placeholder { 
+  color: black;
+}
+
+
