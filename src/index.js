@@ -1,9 +1,10 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/no-cycle */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import './style.css';
-import { checked, textDecorationChecked, changeState } from './checked';
+import { checked, textDecorationChecked, changeState } from './checked.js';
 
 const ul = document.querySelector('.task-list');
 
