@@ -43,7 +43,7 @@ function displayTasks() {
     const taskInput = document.getElementById(`taskInput${i}`);
 
     taskInput.addEventListener('change', () => {
-      let activityTwo = loadDataLocalStorage();
+      const activityTwo = loadDataLocalStorage();
       activityTwo[i].description = taskInput.value;
       saveDataLocalStorage(activityTwo);
       displayTasks();
@@ -59,7 +59,7 @@ function displayTasks() {
     const trashCan = document.getElementById(`delete${i}`);
 
     const container = document.getElementById(i);
-    
+
     taskInput.addEventListener('focus', () => {
       verticalPoints.classList.add('d-none');
       trashCan.classList.remove('d-none');
@@ -69,10 +69,10 @@ function displayTasks() {
 
     taskInput.addEventListener('focusout', () => {
       setTimeout(() => {
-      verticalPoints.classList.remove('d-none');
-      trashCan.classList.add('d-none');
-      container.classList.remove('bg-warning');
-      taskInput.classList.remove('bg-warning');
+        verticalPoints.classList.remove('d-none');
+        trashCan.classList.add('d-none');
+        container.classList.remove('bg-warning');
+        taskInput.classList.remove('bg-warning');
       }, 200);
     });
 
