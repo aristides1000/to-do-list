@@ -21,7 +21,7 @@ function textDecorationChecked(activities, i, taskInput) {
 }
 
 function changeState(activities, i, checkTask) {
-  checkTask.addEventListener('click', () => {
+  checkTask.addEventListener('change', () => {
     if (activities[i].completed) {
       activities[i].completed = false;
     } else {

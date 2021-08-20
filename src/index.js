@@ -15,10 +15,7 @@ function saveDataLocalStorage(activities) {
 function loadDataLocalStorage() {
   const activities = [{ description: 'example 1', completed: true, index: 0 }, { description: 'example 2', completed: true, index: 1 }, { description: 'example 3', completed: false, index: 2 }];
 
-  if (localStorage === null) {
-    return activities;
-  }
-  return JSON.parse(localStorage.getItem('activities'));
+  return JSON.parse(localStorage.getItem('activities')) || activities;
 }
 
 function displayTasks() {
