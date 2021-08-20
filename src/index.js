@@ -12,8 +12,6 @@ function saveDataLocalStorage(activities) {
 }
 
 function loadDataLocalStorage() {
-  // localStorage.setItem('activities', JSON.stringify(activities));
-
   const activities = [{ description: 'example 1', completed: true, index: 0 }, { description: 'example 2', completed: true, index: 1 }, { description: 'example 3', completed: false, index: 2 }];
 
   if (localStorage === null) {
@@ -21,14 +19,6 @@ function loadDataLocalStorage() {
   }
   return JSON.parse(localStorage.getItem('activities'));
 }
-
-/* const activities = [{ description: 'example 1', completed: true, index: 0 }, { description: 'example 2', completed: true, index: 1 }, { description: 'example 3', completed: false, index: 2 }];
-
-localStorage.setItem('activities', JSON.stringify(activities)); */
-
-/* function loadDataLocalStorage {
-  
-} */
 
 function displayTasks() {
   ul.innerHTML = '';
