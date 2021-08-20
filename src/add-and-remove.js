@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { saveDataLocalStorage, loadDataLocalStorage } from './index.js';
 
 function addTask(activities, description) {
@@ -11,4 +12,9 @@ function deleteTask(activities, index) {
   return activities;
 }
 
-export { addTask, deleteTask };
+function deleteAll(activities) {
+  const result = activities.filter((activity) => (activity.completed === false));
+  return result;
+}
+
+export { addTask, deleteTask, deleteAll };

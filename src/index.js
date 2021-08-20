@@ -5,7 +5,7 @@
 import _, { delay, slice } from 'lodash';
 import './style.css';
 import { checked, textDecorationChecked, changeState } from './checked.js';
-import { addTask, deleteTask } from './add-and-remove.js';
+import { addTask, deleteTask, deleteAll } from './add-and-remove.js';
 
 const ul = document.querySelector('.task-list');
 
@@ -91,6 +91,15 @@ const inputNewDescription = document.getElementById('inputNewDescription');
 addNewDescription.addEventListener('click', () => {
   let activities = loadDataLocalStorage();
   activities = addTask(activities, inputNewDescription.value);
+  saveDataLocalStorage(activities);
+  displayTasks();
+});
+
+const clearAllCompleted = document.getElementById('clearAllCompleted');
+
+clearAllCompleted.addEventListener('click', () => {
+  let activities = loadDataLocalStorage();
+  activities = deleteAll(activities);
   saveDataLocalStorage(activities);
   displayTasks();
 });
