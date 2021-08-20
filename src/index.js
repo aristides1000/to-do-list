@@ -39,6 +39,13 @@ function displayTasks() {
 
     const taskInput = document.getElementById(`taskInput${i}`);
 
+    taskInput.addEventListener('change', () => {
+      let activityTwo = loadDataLocalStorage();
+      activityTwo[i].description = taskInput.value;
+      saveDataLocalStorage(activityTwo);
+      displayTasks();
+    });
+
     textDecorationChecked(activities, i, taskInput);
 
     const checkTask = document.getElementById(`checkTask${i}`);
