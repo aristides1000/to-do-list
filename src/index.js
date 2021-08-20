@@ -5,6 +5,7 @@
 import _ from 'lodash';
 import './style.css';
 import { checked, textDecorationChecked, changeState } from './checked.js';
+import { addTask } from './add-and-remove.js';
 
 const ul = document.querySelector('.task-list');
 
@@ -45,6 +46,16 @@ function displayTasks() {
     changeState(activities, i, checkTask);
   }
 }
+
+const addNewDescription = document.getElementById('addNewDescription');
+const inputNewDescription = document.getElementById('inputNewDescription');
+
+addNewDescription.addEventListener('click', () => {
+  let activities = loadDataLocalStorage();
+  activities = addTask(activities, inputNewDescription.value);
+  saveDataLocalStorage(activities);
+  displayTasks();
+});
 
 displayTasks();
 
