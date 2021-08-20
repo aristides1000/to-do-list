@@ -29,7 +29,7 @@ function displayTasks() {
 
     li.innerHTML = `<li class="border p-3 d-flex justify-content-between" id="${i}">
     <div class="d-inline">
-      <input class="form-check-input" type="checkbox" value="" id="checkTask${i}" ${checkIn}> 
+      <input class="form-check-input" type="checkbox" value="" id="checkTask${i}" ${checkIn}>
       <input type="text" class="border-0 onfocus-border-none ps-2 w-75" value="${activities[i].description}" id="taskInput${i}">
     </div>
     <div>
