@@ -90,6 +90,9 @@ const inputNewDescription = document.getElementById('inputNewDescription');
 
 addNewDescription.addEventListener('click', () => {
   let activities = loadDataLocalStorage();
+  if (inputNewDescription.value === '') {
+    return;
+  }
   activities = addTask(activities, inputNewDescription.value);
   saveDataLocalStorage(activities);
   displayTasks();
