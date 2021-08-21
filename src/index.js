@@ -99,7 +99,14 @@ addNewDescription.addEventListener('click', () => {
   }
   activities = addTask(activities, inputNewDescription.value);
   saveDataLocalStorage(activities);
+  inputNewDescription.value = '';
   displayTasks();
+});
+
+inputNewDescription.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    addNewDescription.click();
+  }
 });
 
 const clearAllCompleted = document.getElementById('clearAllCompleted');
