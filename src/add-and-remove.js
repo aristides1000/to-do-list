@@ -7,11 +7,19 @@ function addTask(activities, description) {
 
 function deleteTask(activities, index) {
   activities.splice(index, 1);
+  activities = activities.filter((Obj, index) => {
+    Obj.index = index;
+    return true;
+  });
   return activities;
 }
 
 function deleteAll(activities) {
-  const result = activities.filter((activity) => (activity.completed === false));
+  let result = activities.filter((activity) => (activity.completed === false));
+  result = result.filter((Obj, index) => {
+    Obj.index = index;
+    return true;
+  });
   return result;
 }
 
