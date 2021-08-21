@@ -1,5 +1,5 @@
-/* eslint-disable arrow-parens */
 /* eslint-disable linebreak-style */
+/* eslint-disable arrow-parens */
 /* eslint-disable import/no-cycle */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
