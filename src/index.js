@@ -107,7 +107,7 @@ inputNewDescription.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     addNewDescription.click();
   }
-}); 
+});
 
 const clearAllCompleted = document.getElementById('clearAllCompleted');
 
