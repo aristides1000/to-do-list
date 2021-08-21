@@ -9,7 +9,7 @@
 - ESLint
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/aristides1000/to-do-list/ft-interactive-list/dist/index.html)
+[Live Demo Link](https://raw.githack.com/aristides1000/to-do-list/ft-add-remove/dist/index.html)
 
 
 ## Getting Started
