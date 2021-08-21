@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 /* eslint-disable linebreak-style */
 /* eslint-disable import/no-cycle */
 /* eslint-disable no-plusplus */
@@ -91,6 +92,9 @@ const inputNewDescription = document.getElementById('inputNewDescription');
 addNewDescription.addEventListener('click', () => {
   let activities = loadDataLocalStorage();
   if (inputNewDescription.value === '') {
+    return;
+  }
+  if (activities.findIndex(activity => activity.description === inputNewDescription.value) !== -1) {
     return;
   }
   activities = addTask(activities, inputNewDescription.value);
