@@ -32,6 +32,7 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](https://aristides1000.github.io/to-do-list/).
 
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
