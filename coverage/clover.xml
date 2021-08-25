@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629929311268" clover="3.2.0">
-  <project timestamp="1629929311268" name="All files">
+<coverage generated="1629931097620" clover="3.2.0">
+  <project timestamp="1629931097620" name="All files">
     <metrics statements="64" coveredstatements="40" conditionals="8" coveredconditionals="4" methods="19" coveredmethods="13" elements="91" coveredelements="57" complexity="0" loc="64" ncloc="64" packages="1" files="4" classes="4"/>
     <file name="add-and-remove.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\add-and-remove.js">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>

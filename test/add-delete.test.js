@@ -14,7 +14,6 @@ document.body.innerHTML = `
 
 const ul = document.querySelector('.task-list');
 
-
 describe('add and remove Task', () => {
   it('Add Task', () => {
     let array = [];
