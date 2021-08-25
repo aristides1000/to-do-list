@@ -1,6 +1,8 @@
 # To Do List
 
 > This is a JavaScript project in which a user can add tasks that must be done in the day.
+![screenshot](./app_screenshot.png)
+
 ## Built With
 
 - HTML
