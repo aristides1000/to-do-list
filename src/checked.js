@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/no-cycle */
-import { displayTasks, saveDataLocalStorage } from './index.js';
+import { displayTasks } from './display-task.js';
+import { saveDataLocalStorage } from './local-storage.js';
 
 function checked(activities, i) {
   let checked = '';
