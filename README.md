@@ -1,6 +1,8 @@
 # To Do List
 
 > This is a JavaScript project in which a user can add tasks that must be done in the day.
+![screenshot](./app_screenshot.png)
+
 ## Built With
 
 - HTML
@@ -9,7 +11,7 @@
 - ESLint
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/aristides1000/to-do-list/ft-add-remove/dist/index.html)
+[Live Demo Link](https://raw.githack.com/aristides1000/to-do-list/test-part-one/dist/index.html)
 
 
 ## Getting Started
