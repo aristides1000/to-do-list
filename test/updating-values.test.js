@@ -49,7 +49,6 @@ describe('Edit input, updating and delete all completed', () => {
     reorderIndex(array);
     saveDataLocalStorage(array);
     displayTasks(ul);
-    console.log(array);
     const arrayIndex = array[1].index;
     expect(arrayIndex).toBe(1);
   });

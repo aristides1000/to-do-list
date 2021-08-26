@@ -7,8 +7,6 @@ import { loadDataLocalStorage, saveDataLocalStorage } from './local-storage.js';
 import { checked, textDecorationChecked, changeState } from './checked.js';
 import { deleteTask } from './add-and-remove.js';
 
-import { inputTask } from './task-input.js';
-
 function displayTasks(ul) {
   ul.innerHTML = '';
   const activities = loadDataLocalStorage();

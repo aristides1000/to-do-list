@@ -1,7 +1,5 @@
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable linebreak-style */
-import { saveDataLocalStorage } from './local-storage';
-import { displayTasks } from './display-task.js';
+/* eslint-disable import/prefer-default-export */
 
 function changeStateChecked(activities, i) {
   if (activities[i].completed) {
