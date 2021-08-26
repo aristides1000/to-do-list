@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-self-import */
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
-/* eslint-disable linebreak-style */
 
 import { loadDataLocalStorage, saveDataLocalStorage } from './local-storage.js';
 import { checked, textDecorationChecked, changeState } from './checked.js';
@@ -29,12 +30,12 @@ function displayTasks(ul) {
 
     const taskInput = document.getElementById(`taskInput${i}`);
 
-    taskInput.addEventListener('change', () => {
+    taskInput.onchange = () => {
       const activityTwo = loadDataLocalStorage();
       activityTwo[i].description = taskInput.value;
       saveDataLocalStorage(activityTwo);
       displayTasks(ul);
-    });
+    };
 
     textDecorationChecked(activities, i, taskInput);
 
