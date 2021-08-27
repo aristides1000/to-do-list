@@ -1,3 +1,5 @@
+import { reorderIndex } from "./reorder-index";
+
 /* eslint-disable linebreak-style */
 function addTask(activities, description) {
   const newActivity = { description, index: activities.length, completed: false };
@@ -7,19 +9,13 @@ function addTask(activities, description) {
 
 function deleteTask(activities, index) {
   activities.splice(index, 1);
-  activities = activities.filter((Obj, index) => {
-    Obj.index = index;
-    return true;
-  });
+  reorderIndex(activities);
   return activities;
 }
 
 function deleteAll(activities) {
-  let result = activities.filter((activity) => (activity.completed === false));
-  result = result.filter((Obj, index) => {
-    Obj.index = index;
-    return true;
-  });
+  const result = activities.filter((activity) => (activity.completed === false));
+  reorderIndex(result);
   return result;
 }
 

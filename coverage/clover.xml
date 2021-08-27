@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630024513416" clover="3.2.0">
-  <project timestamp="1630024513416" name="All files">
-    <metrics statements="70" coveredstatements="52" conditionals="8" coveredconditionals="7" methods="23" coveredmethods="17" elements="101" coveredelements="76" complexity="0" loc="70" ncloc="70" packages="1" files="7" classes="7"/>
+<coverage generated="1630024894221" clover="3.2.0">
+  <project timestamp="1630024894234" name="All files">
+    <metrics statements="66" coveredstatements="48" conditionals="8" coveredconditionals="7" methods="21" coveredmethods="15" elements="95" coveredelements="70" complexity="0" loc="66" ncloc="66" packages="1" files="7" classes="7"/>
     <file name="add-and-remove.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\add-and-remove.js">
-      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <line num="3" count="10" type="stmt"/>
-      <line num="4" count="10" type="stmt"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="5" count="10" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="18" count="8" type="stmt"/>
+      <line num="6" count="10" type="stmt"/>
+      <line num="7" count="10" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
       <line num="19" count="2" type="stmt"/>
-      <line num="20" count="7" type="stmt"/>
-      <line num="21" count="7" type="stmt"/>
-      <line num="23" count="2" type="stmt"/>
     </file>
     <file name="change-state-checked.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\change-state-checked.js">
       <metrics statements="3" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
@@ -82,9 +78,9 @@
     </file>
     <file name="reorder-index.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\reorder-index.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="3" type="stmt"/>
-      <line num="6" count="3" type="stmt"/>
+      <line num="4" count="5" type="stmt"/>
+      <line num="5" count="14" type="stmt"/>
+      <line num="6" count="14" type="stmt"/>
     </file>
     <file name="task-input.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\task-input.js">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
