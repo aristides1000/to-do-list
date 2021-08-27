@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
 /* eslint-disable import/no-self-import */
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
@@ -6,8 +7,10 @@
 import { loadDataLocalStorage, saveDataLocalStorage } from './local-storage.js';
 import { checked, textDecorationChecked, changeState } from './checked.js';
 import { deleteTask } from './add-and-remove.js';
+import { inputTask } from './task-input.js';
 
-function displayTasks(ul) {
+function displayTasks() {
+  const ul = document.querySelector('.task-list');
   ul.innerHTML = '';
   const activities = loadDataLocalStorage();
 
@@ -31,10 +34,7 @@ function displayTasks(ul) {
     const taskInput = document.getElementById(`taskInput${i}`);
 
     taskInput.onchange = () => {
-      const activityTwo = loadDataLocalStorage();
-      activityTwo[i].description = taskInput.value;
-      saveDataLocalStorage(activityTwo);
-      displayTasks(ul);
+      inputTask(ul, taskInput, i, activityTwo);
     };
 
     textDecorationChecked(activities, i, taskInput);
