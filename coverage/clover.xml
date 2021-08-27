@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630024297080" clover="3.2.0">
-  <project timestamp="1630024297080" name="All files">
-    <metrics statements="72" coveredstatements="52" conditionals="10" coveredconditionals="7" methods="23" coveredmethods="17" elements="105" coveredelements="76" complexity="0" loc="72" ncloc="72" packages="1" files="7" classes="7"/>
+<coverage generated="1630024513416" clover="3.2.0">
+  <project timestamp="1630024513416" name="All files">
+    <metrics statements="70" coveredstatements="52" conditionals="8" coveredconditionals="7" methods="23" coveredmethods="17" elements="101" coveredelements="76" complexity="0" loc="70" ncloc="70" packages="1" files="7" classes="7"/>
     <file name="add-and-remove.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\add-and-remove.js">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <line num="3" count="10" type="stmt"/>
@@ -25,20 +25,18 @@
       <line num="8" count="1" type="stmt"/>
     </file>
     <file name="checked.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\checked.js">
-      <metrics statements="13" coveredstatements="8" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="3"/>
-      <line num="7" count="15" type="stmt"/>
-      <line num="9" count="15" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="13" count="15" type="stmt"/>
-      <line num="17" count="15" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="20" count="14" type="stmt"/>
-      <line num="25" count="15" type="stmt"/>
-      <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+      <metrics statements="11" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="3"/>
+      <line num="8" count="15" type="stmt"/>
+      <line num="10" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="14" count="15" type="stmt"/>
+      <line num="18" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="14" type="stmt"/>
+      <line num="26" count="15" type="stmt"/>
       <line num="27" count="0" type="stmt"/>
       <line num="29" count="0" type="stmt"/>
-      <line num="32" count="0" type="stmt"/>
-      <line num="33" count="0" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
     </file>
     <file name="display-task.js" path="C:\Users\lenovo 2019\Documents\microverse\Main-Curriculum\javascript\to-do-list\src\display-task.js">
       <metrics statements="33" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="2"/>

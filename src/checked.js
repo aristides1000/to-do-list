@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable import/no-cycle */
+import { changeStateChecked } from './change-state-checked.js';
 import { displayTasks } from './display-task.js';
 import { saveDataLocalStorage } from './local-storage.js';
 
@@ -23,11 +24,7 @@ function textDecorationChecked(activities, i, taskInput) {
 
 function changeState(activities, i, checkTask) {
   checkTask.addEventListener('change', () => {
-    if (activities[i].completed) {
-      activities[i].completed = false;
-    } else {
-      activities[i].completed = true;
-    }
+    changeStateChecked(activities, i);
 
     saveDataLocalStorage(activities);
     displayTasks(activities);
